@@ -1,0 +1,124 @@
+body{
+    height: 150vh;
+}
+
+
+form{
+    width: 400px;
+    height: 530px;
+    border: 1px solid rgba(59, 27, 88, 0.441);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 150px;
+    padding-top: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 70px 2px rgba(97, 42, 224, 0.226);
+
+}
+
+
+.signIn{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px;
+}
+
+
+input,label{
+    margin: 4px;
+}
+
+label{
+    font-size: 18px;
+}
+
+input{
+    width: 130px;
+    height: 20px;
+    padding: 12px 20px;
+    
+}
+
+#submitLogin{
+    margin-top: 15px;
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(124, 26, 211);
+    cursor: pointer;
+    color: rgb(124, 26, 211);
+    font-size: 16px
+}
+
+
+#submitLogin:active{
+    color: rgb(124, 26, 211);
+    width: 120px;
+    height: 50px;
+    border: 3px solid rgb(124, 26, 211);
+    
+}
+
+
+#errorMessage{
+    margin-top: 20px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    font-size: 16px;
+    color: rgb(250, 67, 67);
+    line-height: 1.6
+
+}
+
+.newUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.newUser>p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+span{
+    color: rgb(124, 26, 211);
+    font-weight: bold;
+}
+
+.passwordText{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+.fa{
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/allArt.css">
+    <link rel="stylesheet" href="./css/allArtMax600.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/globalMax600.css">
+    <script src="https://kit.fontawesome.com/956588ea48.js" crossorigin="anonymous"></script>
+    <script src="./js/allArt.js" defer></script>
+    <script src="./js/authentication.js" defer></script>
+    <script src="./js/logOut.js" defer></script>
+    <script src="./js/mobile.js" defer></script>
+    <title>Great art</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./home.html"><img id="logo" src="../server/public/imgs/A__1_-removebg-preview.png" alt="logo"></a>
+        </div>
+        <div class="burgerBars" onclick="openMenu()"></div>
+        <div class="navbar">
+            <div class="linksContainer">
+                <a class="textNavbar" id="home" href="./home.html">Home</a>
+                <a class="textNavbar" id='gallery' href="./allArt.html"><span class="gallery">Gallery</span></a>
+                <a class="textNavbar" id='favorites' href="./favorite.html">Favorites</a>
+            </div>
+            <div class="userStatus">
+                <a class="textNavbar" id='user-status' href="./login.html">Sighn In</a>
+                <img id="logOutLoggo" src="../server/public/imgs/2767155-removebg-preview.png" alt="out">
+            </div>
+        </div>
+    </header>
+    <div class="mobileLinks">
+        <p class="user"></p>
+        <a  id="homeMobile" href="./home.html">Home</a>
+        <a  id='galleryMobile' href="./allArt.html">Gallery</a>
+        <a  id='favoritesMobile' href="./favorite.html">Favorites</a>
+        <img id="logOutLoggoMobile" src="../server/public/imgs/2767155-removebg-preview.png" alt="out">
+    </div>
+   <div>
+       <h1>Great Art by Great Artists</h1>
+    <div class="gallery-container">
+        <div class="rightColomn column">
+            <div class="imageHolder image1">
+                <img class="artImg" id="im3g1" src="../server/public/imgs/Kuniyoshi.jpeg" alt="Kuniyoshi">
+                <div class="nonImgDisplay">
+                    <div class="like likeImg likeImgStrange" id="image1"></div>
+                    <div class="information">
+                        <p><span>Title - </span> Princess Takiyasha summons a skeleton to frighten Mitsukuni</p> 
+                        <p><span>Artist - </span> Utagawa Kuniyoshi</p>
+                        <p><span>Materials - </span> colour woodblock prints</p>
+                        <p><span>Year - </span> 1844</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imageHolder image2">
+                <img class="artImg" id="imag2" src="../server/public/imgs/monet.jpg" alt="Monet">
+                <div class="nonImgDisplay">
+                    <div class="like" id="image2"></div>
+                    <div class="information">
+                        <p><span>Title - </span> The Water-Lily Pond</p> 
+                        <p><span>Artist - </span> Claude Monet</p>
+                        <p><span>Materials - </span> oil pain on canvas</p>
+                        <p><span>Year - </span> 1899</p>
+                    </div>
+                 </div>
+            </div>
+            <div class="imageHolder image3 tallContainer" id="img3">
+                <img class="tall" id="imag3" src="../server/public/imgs/Mona_Lisa.jpg" alt="Leonardo da Vinci">
+                <div class="nonImgDisplay nonImgDisplayTall">
+                    <div class="like" id="image3"></div>
+                    <div class="information informationTall">
+                        <p><span>Title - </span> Mona Lisa</p> 
+                        <p><span>Artist - </span>  Leonardo da Vinci</p>
+                        <p><span>Materials - </span> Oil on poplar panel</p>
+                        <p><span>Year - </span> between 1503 to 1506</p>
+                    </div>
+                </div>
+            </div>  
+            <div class="imageHolder image4" id="img4">
+                <img class="artImg" id="imag4" src="../server/public/imgs/warhol.jpg" alt="Andy Warhall">
+                <div class="nonImgDisplay">
+                    <div class="like" id="image4"></div>
+                    <div class="information">
+                        <p><span>Title - </span> Campbell's Soup Cans</p> 
+                        <p><span>Artist - </span> Andy Warhall</p>
+                        <p><span>Materials - </span> synthetic polymer paint on canvas</p>
+                        <p><span>Year - </span> 1962</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imageHolder image5" id="img5">
+                <img class="artImg" id="imag5" src="../server/public/imgs/time.webp" alt="Dalli">
+                <div class="nonImgDisplay">
+                    <div class="like" id="image5"></div>
+                    <div class="information">
+                        <p><span>Title - </span> The Persistence of Memory</p> 
+                        <p><span>Artist - </span> Salvador Dalí</p>
+                        <p><span>Materials - </span> oil on canvas</p>
+                        <p><span>Year - </span> 1931</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imageHolder image6" id="img6">
+                <img class="artImg" id="imag6" src="../server/public/imgs/Tsunami_by_hokusai_19th_century.jpg" alt="Hokusai">
+                <div class="nonImgDisplay">
+                    <div class="like" id="image6"></div>
+                    <div class="information">
+                        <p><span>Title - </span> The Great Wave off Kanagawa</p> 
+                        <p><span>Artist - </span> Katsushika Hokusai</p>
+                        <p><span>Materials - </span>  woodblock print</p>
+                        <p><span>Year - </span> 1831</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leftColomn column">
+            <div class="imageHolder image7" id="img7">
+                <img class="artImg" id="imag7" src="../server/public/imgs/venus.jpg" alt="Boticelli">
+                <div class="nonImgDisplay">
+                    <div class="like" id="image7"></div>
+                    <div class="information">
+                        <p><span>Title - </span> The Birth of Venus</p> 
+                        <p><span>Artist - </span> Sandro Botticelli</p>
+                        <p><span>Materials - </span> Tempera on canvas</p>
+                        <p><span>Year - </span> mid 1480s </p>
+                    </div>
+                </div>
+            </div>
+            <div class="imageHolder image8" id="img8">
+                <img class="artImg" id="imag8" src="../server/public/imgs/The_Garden_of_earthly_delights.jpg" alt="Hieronymus Bosch">
+                <div class="nonImgDisplay">
+                    <div class="like" id="image8"></div>
+                    <div class="information">
+                        <p><span>Title - </span> The Garden of Earthly Delights</p> 
+                        <p><span>Artist - </span> Hieronymus Bosch</p>
+                        <p><span>Materials - </span> oil on oak panels</p>
+                        <p><span>Year - </span> between 1490 and 1510</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imageHolder image9 tallContainer" id="img9">
+                <img class="tall" id="imag9" src="../server/public/imgs/goya los caprichos.jpg" alt="Goya">
+                <div class="nonImgDisplay nonImgDisplayTall">
+                    <div class="like" id="image9"></div>
+                    <div class="information informationTall">
+                        <p><span>Title - </span> Los caprichos, Print no. 43, The Sleep of Reason</p> 
+                        <p><span>Artist - </span>  Francisco Goya</p>
+                        <p><span>Materials - </span> etching with aquatint on paper</p>
+                        <p><span>Year - </span> between 1797 to 1798 </p>
+                    </div>
+                </div>
+            </div>  
+            <div class="imageHolder image10" id="img10">
+                <img class="artImg" id="imag10" src="../server/public/imgs/Van_Gogh_-_Starry_Night.jpg" alt="Van gogh">
+                <div class="nonImgDisplay">
+                    <div class="like" id="image10"></div>
+                    <div class="information">
+                        <p><span>Title - </span> The Starry Night</p> 
+                        <p><span>Artist - </span> Vincent van Gogh</p>
+                        <p><span>Materials - </span> oil on canvas</p>
+                        <p><span>Year - </span> 1889</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imageHolder image11 tallContainer" id="img11">
+                <img class="tall" id="imag11" src="../server/public/imgs/the scream.jpg" alt="Monk">
+                <div class="nonImgDisplay nonImgDisplayTall">
+                    <div class="like" id="image11"></div>
+                    <div class="information informationTall">
+                        <p><span>Title - </span> The Scream</p> 
+                        <p><span>Artist - </span> Edvard Munch</p>
+                        <p><span>Materials - </span> Oil, tempera, pastel and crayon on cardboard</p>
+                        <p><span>Year - </span> 1893</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imageHolder image12 tallContainer" id="img12">
+                <img class="tall" id="imag12" src="../server/public/imgs/Pablo_Picasso,_1910,_Girl_with_a_Mandolin.jpg" alt="Picasso">
+                <div class="nonImgDisplay nonImgDisplayTall">
+                    <div class="like" id="image12"></div>
+                    <div class="information informationTall">
+                        <p><span>Title - </span> Girl with a Mandolin</p> 
+                        <p><span>Artist - </span> Pablo Picasso</p>
+                        <p><span>Materials - </span> oil on canvas</p>
+                        <p><span>Year - </span> 1910</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+   </div>
+   <footer>
+        <p>madeByAdiT&#169;</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+

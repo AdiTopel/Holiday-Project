@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/globalMax600.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/register.js" defer></script>
+    <script src="./js/authentication.js" defer></script>
+    <script src="./js/mobile.js" defer></script>
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./home.html"><img id="logo" src="../server/public/imgs/A__1_-removebg-preview.png" alt="logo"></a>
+        </div>
+        <div class="burgerBars" onclick="openMenu()"></div>
+        <div class="navbar">
+            <div class="linksContainer">
+                <a class="textNavbar" id="home" href="./home.html">Home</a>
+                <a class="textNavbar" id='gallery' href="./allArt.html">Gallery</a>
+                <a class="textNavbar" id='favorites' href="./favorite.html">Favorites</a>
+            </div>
+            <div class="userStatus">
+                <a class="textNavbar" id='user-status' href="./login.html">Sign In</a>
+            </div>
+        </div>
+    </header>
+    <div class="mobileLinks">
+        <p class="user"></p>
+        <a id="homeMobile" href="./home.html">Home</a>
+        <a id='galleryMobile' href="./allArt.html">Gallery</a>
+        <a id='favoritesMobile' href="./favorite.html">Favorites</a>
+        <img id="logOutLoggoMobile" src="../server/public/imgs/2767155-removebg-preview.png" alt="out">
+        <a id="logInMobile" href="./js/login.js">Sign in</a>
+    </div>
+   <form data-registration-form>
+    <div class="signIn">Sighn Up</div>
+    <div class="username registerContainer">
+        <label for="username">Username</label>
+        <input id="username" type="text">
+    </div>
+    <div class="email registerContainer">
+        <label for="email">Email</label>
+        <input id="email" type="text">
+    </div>
+    <div class="password registerContainer">
+        <label for="password">Password</label>
+        <div class="passwordText">
+            <input id="password" type="password">
+            <button class="fa fa-eye" id="eyePassword" type="button"><i></i></button>
+        </div>
+    </div>
+    <div class="verifyPassword registerContainer">
+        <label for="verifyPassword">Verify Password</label>
+        <div class="passwordText">
+            <input id="verifyPassword" type="password">
+            <button class="fa fa-eye" id="eyeVerifyPassword" type="button"><i></i></button>
+        </div>
+    </div>
+    <div class="firstName registerContainer">
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text">
+    </div>
+    <div class="lastName registerContainer">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text">
+    </div>
+       <button id="submitRegister" type="submit">Submit</button>
+       <p id="errorMessage"></p>
+    </form>
+    <footer>
+        <p>madeByAdiT&#169;</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,216 @@
+@media only screen and (max-width: 600px) {
+    
+    body{
+       
+        height: 760vh;
+        background: linear-gradient(90deg, rgba(209,107,165,1) 0%, rgba(226,108,146,1) 10%, rgba(236,114,126,1) 20%, rgba(239,125,106,1) 30%, rgba(234,139,89,1) 40%, rgba(240,139,99,1) 50%, rgba(246,139,109,1) 60%, rgba(248,135,162,1) 70%, rgba(223,143,200,1) 80%, rgba(182,156,225,1) 90%, rgba(134,168,231,1) 100%);
+        
+    }
+    
+    h1{
+        margin-top: 35px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 20px;
+        color: #000000;
+    }
+    
+    .gallery-container{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid rgba(138, 111, 111, 0);
+        margin-bottom: 50px;
+        padding-top: 0%;
+        
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0%;
+    }
+    
+    
+    .imageHolder{
+        width: 250px;
+        height: 320px;
+        box-shadow: 0px 0px 15px 1px rgba(65, 61, 137, 0.543);
+        background-color: white;
+        margin: 15px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgba(0, 0, 0, 0.982);
+        border-radius: 5px;
+    }
+    
+    
+    
+    .nonImgDisplay{
+        width: 220px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: baseline;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        font-size: 12px;
+        line-height: normal;
+        padding-left: 5px;
+        
+    
+    }
+    
+    
+    .nonImgDisplayTall{
+        margin-top: 30px;
+        width: 420px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        margin: 0%;
+        padding: 0%;
+        margin-right: 10px;
+        margin-left: 5px;
+
+    }
+    
+    
+    .artImg{
+        width: 100%;
+        height: 150px;
+        border-radius: 5px;
+        border: 1px solid black;
+        transition: width 1s, height 1s;
+        transition-timing-function: ease-in-out;
+        
+    }
+    
+    
+    .information{
+        width: 200px;
+        height: 120px;
+    }
+
+    .informationTall{
+        height: 260px;
+        width: 70px;
+        
+    }
+    
+    .information>p{
+        margin: 5px;
+        font-size: 12px;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    
+    .tall{
+        height: 90%;
+        width: 170px;
+        margin: 0%;
+        margin-left: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        
+    }
+    
+    .tallContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    
+    
+    .click{
+        width: 30px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        margin: 15px;
+    } 
+
+    .fullHeart{
+        display: none;
+    }
+    
+    
+    .heartGone{
+        display: none;
+    }
+    
+    
+    .heartShow{
+        width: 30px;
+        display: block;
+    }
+    
+    
+    
+    span{
+       color: #dc5005;
+    }
+    
+    
+    .gallery{
+        font-weight: bold;
+        color: rgb(222, 117, 32);
+    }
+    
+    
+    
+    .like{
+        margin-top:6px;
+        width: 30px;
+        height: 28px;
+        background: url('../img/emptyHeart.svg');
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    
+    
+    .likeImgStrange{
+        width: 30px;
+        height: 28x;
+        cursor: pointer;
+    }
+    
+    
+    .pressedLikeForImage1{
+        margin-top:6px;
+        width: 46px;
+        height: 30px;
+        background-image: url('../img/fullHeart.svg');
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    
+    .pressedLike{
+        margin-top:6px;
+        width: 30px;
+        height: 30px;
+        background-image: url('../img/fullHeart.svg');
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+
+}
